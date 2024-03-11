@@ -24,13 +24,17 @@ span:hover {
 button {
   background: linear-gradient(#1d2f7a, #485f9e);
   box-shadow: 2px 2px 12rem #8793d0;
+  margin-top: 2vh;
   color: white;
   font-weight: bolder;
   border-radius: 10px;
   border: none;
-  height: 8vh;
+  height: 6vh;
   width: 22vh;
+  cursor: pointer;
 }
+
+
 
 @media (hover: hover) {
   a:hover {
