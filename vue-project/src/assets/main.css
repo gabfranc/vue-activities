@@ -1,0 +1,52 @@
+@import './base.css';
+
+body {
+  background: #87b3d0;
+  color: #1d2f7a;
+}
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+span {
+  cursor:pointer;
+  color:hsla(216, 100%, 37%, 0.8);
+}
+
+span:hover {
+  background: #e2eaf6;
+  font-weight: 600;
+}
+
+button {
+  background: linear-gradient(#1d2f7a, #485f9e);
+  box-shadow: 2px 2px 12rem #8793d0;
+  color: white;
+  font-weight: bolder;
+  border-radius: 10px;
+  border: none;
+  height: 8vh;
+  width: 22vh;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
