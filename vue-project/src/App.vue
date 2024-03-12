@@ -1,9 +1,9 @@
 <script setup>
 import { ref } from "vue";
 import HelloWorld from "./components/HelloWorld.vue";
-
 const showText = ref(false);
-const message = ref('SHOW STORE');
+const message = ref('SHOW ALBUMS');
+
 function clickButton() {
   showText.value = !showText.value;
 }
@@ -11,8 +11,10 @@ function clickButton() {
 <template>
   <main>
     <section>
-      <h1>ALBUM STORE (TAYLOR'S VERSION)</h1>
-      <HelloWorld v-if="showText" />
+    <div v-if="showText">
+      <h1>Album Store</h1>
+        <HelloWorld />
+    </div>
       <button @click="clickButton"><slot>{{ message }}</slot></button>
 
     </section>
