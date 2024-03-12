@@ -19,7 +19,7 @@ function clickButton() {
         <HelloWorld />
     </div>
 
-    <!-------- TODO: Adding slot to button-------->
+    <!-------- DONE: Adding slot to button-------->
       <button @click="clickButton"><slot>{{ message }}</slot></button>
 
     </section>
