@@ -1,5 +1,7 @@
 <script setup>
 import { ref } from "vue";
+
+// TODO: Creating an array for the albums
 const store = ref([
   {
     label: "Debut",
