@@ -4,6 +4,9 @@ import HelloWorld from "./components/HelloWorld.vue";
 const showText = ref(false);
 const message = ref('SHOW ALBUMS');
 
+
+ // when button is clicked text will appear
+
 function clickButton() {
   showText.value = !showText.value;
 }
@@ -15,6 +18,8 @@ function clickButton() {
       <h1>Album Store</h1>
         <HelloWorld />
     </div>
+
+    <!-------- TODO: Adding slot to button-------->
       <button @click="clickButton"><slot>{{ message }}</slot></button>
 
     </section>
