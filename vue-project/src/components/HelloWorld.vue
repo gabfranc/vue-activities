@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 
-// TODO: Creating an array for the albums
+// DONE: Creating an array for the albums
 const store = ref([
   {
     label: "Debut",
@@ -74,6 +74,7 @@ const store = ref([
 ]);
 const cart = ref([]);
 
+//DONE: creating function for the listed items to move positions
 function transferValue(source, destination) {
   if (source.length > 0) {
     const value = source.pop();
